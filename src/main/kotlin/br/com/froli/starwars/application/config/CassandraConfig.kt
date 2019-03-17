@@ -53,9 +53,9 @@ class CassandraConfig : AbstractCassandraConfiguration() {
         return listOf(specification)
     }
 
-    /*override fun getKeyspaceDrops(): List<DropKeyspaceSpecification> {
+    override fun getKeyspaceDrops(): List<DropKeyspaceSpecification> {
         return listOf(DropKeyspaceSpecification.dropKeyspace(keyspace!!))
-    }*/
+    }
 
     override fun getMetricsEnabled(): Boolean {
         return false
